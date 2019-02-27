@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/timmah1991/WeatherSite#readme",
   "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
     "request": "^2.88.0",
     "yargs": "^13.2.1"
   }
