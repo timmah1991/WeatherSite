@@ -1,0 +1,23 @@
+{
+  "name": "weathersite",
+  "version": "1.0.0",
+  "description": "First commit # WeatherSite First Node.js application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timmah1991/WeatherSite.git"
+  },
+  "author": "T K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timmah1991/WeatherSite/issues"
+  },
+  "homepage": "https://github.com/timmah1991/WeatherSite#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "yargs": "^13.2.1"
+  }
+}
