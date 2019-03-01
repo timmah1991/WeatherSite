@@ -25,7 +25,7 @@ app.post('/', function (req, res) {
       if(weather.main == undefined){
         res.render('index', {weather: null, error: 'Error, please try again'});
       } else {
-        let weatherText = `It's ${weather.main.temp} degrees in ${weather.name}!`;
+        let weatherText = `It's ${weather.main.temp} degrees in ${weather.name}! (${tformat} units.) The relative humidity level is ${weather.main.humidity}. The wind speed is ${weather.wind.speed} at a heading of ${weather.wind.deg}`;
         res.render('index', {weather: weatherText, error: null});
       }
     }
