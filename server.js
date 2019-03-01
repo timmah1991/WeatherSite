@@ -12,9 +12,10 @@ app.get('/', function (req, res) {
 })
 
 app.post('/', function (req, res) {
+  let tformat = req.body.format;
   let city = req.body.city;
   let apiKey = req.body.apikey;
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
+  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=${tformat}&appid=${apiKey}`
 
   request(url, function (err, response, body) {
     if(err){
