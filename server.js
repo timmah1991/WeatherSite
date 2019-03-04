@@ -26,7 +26,9 @@ app.post('/', function (req, res) {
         res.render('index', {weather: null, error: 'Error, please try again'});
       } else {
         let weatherText = `It's ${weather.main.temp} degrees in ${weather.name}! (${tformat} units.) The relative humidity level is ${weather.main.humidity}. The wind speed is ${weather.wind.speed} at a heading of ${weather.wind.deg}`;
+        let LogText = `I have served weather data for ${req.body.city}`
         res.render('index', {weather: weatherText, error: null});
+        console.log(LogText)
       }
     }
   });
